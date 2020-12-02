@@ -1,0 +1,328 @@
+@charset "UTF-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* reset CSS */
+
+/* COMMON */
+html {
+	scroll-behavior: smooth;
+	font-size: 20px;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+b {
+	font-weight: bold;
+}
+h2.title {}
+h3.title {
+	text-align: center;
+	font-size: 3rem;
+	font-weight: bold;
+	color: #4568DC;
+	margin-bottom: 5rem;
+}
+/* COMMON */
+
+/* HEADER */
+#header {
+	position: fixed;
+	z-index: 10;
+}
+#header #check {
+	display: none;
+}
+#header i {
+	position: absolute;
+	z-index: 1000;
+	top: 2rem;
+	left: 2rem;
+	font-size: 2rem;
+}
+#header .hide {
+	opacity: 1;
+}
+#header .show {
+	opacity: 0;
+}
+
+#header #check:checked ~ label .hide {
+	opacity: 0;
+}
+#header #check:checked ~ label .show {
+	opacity: 1;
+}
+#header #check:checked ~ nav {
+	left: 0%;
+}
+#header #check:checked ~ nav ul {
+	left: 0%;
+}
+
+#header nav {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: -100%;
+}
+#header nav ul {
+	position: absolute;
+	width: 30%;
+	height: 100%;
+	background: #fff;
+	z-index: 100;
+	left: -30%;
+	transition: 1s;
+}
+#header nav .bg {
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	background: rgba(0, 0, 0, 0.5);
+}
+#header nav ul li {
+	width: 100%;
+	margin: 5rem 0;
+}
+#header nav ul li a {
+	font-size: 3rem;
+}
+
+/* HEADER */
+
+/* MAIN */
+#main {
+  width: 100%;
+  height: 100vh;
+  background: #4568DC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(-45deg, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(-45deg, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	overflow: hidden;
+	position: relative;
+}
+#main .title {
+	font-size: 6rem;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#main .main-src span {
+	background: rgba(255, 255, 255, 0.5);
+	position: absolute;
+}
+#main .main-src .shape-rec {
+	width: 30vw;
+	height: 8vw;
+	border-radius: 20vw;
+	transform: rotate(-45deg);
+}
+#main .main-src .shape-cir {
+	width: 10vw;
+	height: 10vw;
+	border-radius: 50%;
+}
+#main .main-src span:nth-child(1) {
+	right: 0%;
+	top: -10%;
+}
+#main .main-src span:nth-child(2) {
+	right: 10%;
+	top: 30%;
+}
+#main .main-src span:nth-child(3) {
+	left: 0%;
+	bottom: -10%;
+}
+#main .main-src span:nth-child(4) {
+	left: 10%;
+	bottom: 30%;
+}
+/* MAIN */
+
+/* INTRO */
+#intro {
+	padding: 5rem 0;
+}
+#intro .container {
+	display: flex;
+	justify-content: space-between;
+}
+#intro .intro-cont {
+	flex-basis: 350px;
+	padding: 2rem 0;
+}
+#intro .intro-cont .intro-img {
+	width: 80%;
+	padding-top: 80%;
+	border-radius: 50%;
+	background: gray;
+	margin: 0 auto;
+	border: 5px solid #4568DC;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#intro .intro-cont p {
+	text-align: center;
+	margin: 2rem 0;
+	font-size: 2rem;
+}
+#intro .intro-cont.cont01 .intro-img {background-image: url(../images/face.jpg);}
+#intro .intro-cont.cont02 .intro-img {background-image: url(../images/puppy.jpg);}
+#intro .intro-cont.cont03 .intro-img {background-image: url(../images/paint.jpg);}
+/* INTRO */
+
+/* INFO */
+#info {
+	padding: 5rem 0;
+}
+#info .container {
+	display: flex;
+	justify-content: center;
+}
+#info #map {
+	width: 30rem;
+	height: 30rem;
+	background: #ccc;
+	margin-right: 5%;
+}
+#info .info-txt {
+
+}
+#info .info-txt p {
+	font-size: 1.5rem;
+	line-height: 4rem;
+}
+#info .info-txt p i {
+	margin-right: 2%;
+}
+/* INFO */
+
+/* 1200px 이하 */
+@media (max-width: 1200px) {
+	/* COMMON */
+	html {
+		font-size: 14px;
+	}
+	/* COMMON */
+
+	/* HEADER */
+	#header nav ul {
+		width: 50%;
+	}
+	/* HEADER */
+
+	/* MAIN */
+
+	#main .title {
+		/* font-size: 4rem; */
+	}
+	#main .main-src span {
+		background: rgba(255, 255, 255, 0.5);
+		position: absolute;
+	}
+	#main .main-src span:nth-child(1) {
+		right: 0%;
+		top: 0%;
+	}
+	#main .main-src span:nth-child(2) {
+		right: 10%;
+		top: 30%;
+	}
+	#main .main-src span:nth-child(3) {
+		left: 0%;
+		bottom: 0%;
+	}
+	#main .main-src span:nth-child(4) {
+		left: 10%;
+		bottom: 30%;
+	}
+	/* MAIN */
+
+	/* INTRO */
+	#intro .container {
+		justify-content: center;
+		flex-direction: column;
+	}
+	#intro .intro-cont {
+		flex-basis: 350px;
+		padding: 2rem 0;
+	}
+	#intro .intro-cont .intro-img {
+		width: 80%;
+		padding-top: 80%;
+	}
+	/* INTRO */
+
+	/* INFO */
+	#info {
+		padding: 5rem 0;
+	}
+	#info .container {
+		flex-direction: column;
+	}
+	#info #map {
+		width: 80%;
+		height: 30rem;
+		margin: 0 auto;
+	}
+	#info .info-txt {
+		margin: 0 auto;
+	}
+	/* INFO */
+}
