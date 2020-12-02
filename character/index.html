@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .move img {
+            position: relative;
+            left: 0;
+            animation: move 5s forwards;
+        }
+        @keyframes move {
+            0% {left: 0;}
+            100% {left: 50%;}
+        }
+        .house {
+            width: 320px;
+            height: 500px;
+            background: navy;
+            position: absolute;
+            left: 54%;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="move">
+        <img src="character.gif" alt="캐릭터">
+        <div class="house"></div>
+    </div>
+</body>
+</html>
