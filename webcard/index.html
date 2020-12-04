@@ -28,23 +28,28 @@
             /* background: #4e060d; */
             background: #381907;
             color: #fff;
+            display: table;
         }
         #profile .txt .cont {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            display: table-cell;
+            vertical-align: middle;
+            position: relative;
+            width: 60%;
+            transition: 1s;
         }
         #profile .txt .cont h1 {
-            font-size: 6vw;
+            font-size: 4rem;
             margin-bottom: 20px;
         }
         #profile .txt .cont p {
-            font-size: 3vw;
-            line-height: 5vw;
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+        #profile .txt .cont:hover {
+            
         }
         #profile .txt span {
-            font-size: 14px;
+            font-size: 0.8rem;
             position: absolute;
             right: 10px;
         }
@@ -56,6 +61,9 @@
         }
 
         @media (max-width: 1024px) {
+            html {
+                font-size: 10px;
+            }
             #profile .img {
                 width: 100%;
                 height: 50%;
