@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <div id="sec-01" class="section">
+      <div class="tit" data-0="opacity: 1;" data-500="opacity: 0;">
+        <h2>TITLE</h2>
+      </div>
+    </div>
+    <div id="sec-02" class="section">
+      <div class="gallery-01" data-500="transform: translateX(0%);" data-1500="transform: translateX(-200%);">
+        <div class="picture"></div>
+        <div class="picture"></div>
+        <div class="picture"></div>
+        <div class="picture"></div>
+      </div>
+    </div>
+    <div id="sec-03" class="section">
+      <div class="obj">
+        <span data-1400="opacity: 0;" data-1500="opacity: 1; top: 10%; left: 20%;" data-2000="top: 20%; left: 50%;" data-2500="top: 60%; left: 80%;" data-3000="top: 70%; left: 50%;" data-3500="top: 100%; left: 20%;"></span>
+      </div>
+    </div>
+    <div id="sec-04" class="section">
+      <div class="gallery-02">
+        <div class="picture" data-3500="width: 0vw; height: 0vw;" data-4000="width: 30vw; height: 30vw;" data-4500="width: 0vw; height: 0vw;"></div>
+        <div class="picture" data-4500="width: 0vw; height: 0vw;" data-5000="width: 30vw; height: 30vw;" data-5500="width: 0vw; height: 0vw;"></div>
+        <div class="picture" data-5500="width: 0vw; height: 0vw;" data-6000="width: 30vw; height: 30vw;" data-6500="width: 0vw; height: 0vw;"></div>
+        <div class="picture" data-6500="width: 0vw; height: 0vw;" data-7000="width: 30vw; height: 30vw;" data-7500="width: 0vw; height: 0vw;"></div>
+      </div>
+    </div>
+    <div id="sec-05" class="section">
+      <div class="poem" data-9500="opacity: 1; top: 30%;" data-10000="opacity: 0; top: 20%;">
+        <p data-7500="opacity: 0; transform: translateX(100%);" data-8000="opacity: 1; transform: translateX(0%);">첫번째문장</p>
+        <p data-7800="opacity: 0; transform: translateX(-100%);" data-8500="opacity: 1; transform: translateX(0%);">두번째문장</p>
+        <p data-8300="opacity: 0; transform: translateX(100%);" data-9000="opacity: 1; transform: translateX(0%);">세번째문장</p>
+        <p data-8800="opacity: 0; transform: translateX(-100%);" data-9500="opacity: 1; transform: translateX(0%);">네번째문장</p>
+      </div>
+    </div>
+    <div id="sec-06" class="section">
+      <div class="txt">
+        <h3 data-10000="transform: scale(0)" data-12000="transform: scale(5)">TEXT</h3>
+      </div>
+    </div>
+  </div>
+
+
+<script src="js/skrollr.min.js"></script>
+<script>
+  var s = skrollr.init();
+</script>
+</body>
+</html>
