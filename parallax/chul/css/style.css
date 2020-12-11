@@ -2,11 +2,14 @@
 /* COMMON */
 html {
   font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  color: #fff;
 }
 body {
-  background: #ee9ca7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .section {
   padding: 100px 0;
@@ -19,6 +22,7 @@ body {
   text-align: center;
   width: 100%;
   font-size: 6rem;
+  top: 30%;
 }
 /* SECTION-01 */
 
@@ -122,6 +126,9 @@ body {
 
 /* MEDIA QUERY TB,MO AREA */
 @media (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
   /* SECTION-02 */
   #sec-02 .gallery-01 {
     width: 320vw;
