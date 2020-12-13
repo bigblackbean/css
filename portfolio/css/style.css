@@ -266,6 +266,7 @@ b {
     }
     #info #map{
         width: 80%;
+        height: 18rem;
         margin: 0 auto 4rem;
     }
     #info #map iframe {
