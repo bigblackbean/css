@@ -54,3 +54,8 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
